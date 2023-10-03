@@ -1,0 +1,34 @@
+2023-10-03 21:19:28,042 INFO    StreamThr :97359 [internal.py:wandb_internal():86] W&B internal server running at pid: 97359, started at: 2023-10-03 21:19:28.041677
+2023-10-03 21:19:28,045 DEBUG   HandlerThread:97359 [handler.py:handle_request():144] handle_request: status
+2023-10-03 21:19:28,049 INFO    WriterThread:97359 [datastore.py:open_for_write():85] open: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_211928-jvnc0vr0/run-jvnc0vr0.wandb
+2023-10-03 21:19:28,050 DEBUG   SenderThread:97359 [sender.py:send():379] send: header
+2023-10-03 21:19:28,050 DEBUG   SenderThread:97359 [sender.py:send():379] send: run
+2023-10-03 21:19:28,530 INFO    SenderThread:97359 [dir_watcher.py:__init__():211] watching files in: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_211928-jvnc0vr0/files
+2023-10-03 21:19:28,531 INFO    SenderThread:97359 [sender.py:_start_run_threads():1121] run started: jvnc0vr0 with start time 1696335568.040634
+2023-10-03 21:19:28,531 DEBUG   SenderThread:97359 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:19:28,531 INFO    SenderThread:97359 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:19:28,539 DEBUG   HandlerThread:97359 [handler.py:handle_request():144] handle_request: check_version
+2023-10-03 21:19:28,539 DEBUG   SenderThread:97359 [sender.py:send_request():406] send_request: check_version
+2023-10-03 21:19:28,619 DEBUG   HandlerThread:97359 [handler.py:handle_request():144] handle_request: run_start
+2023-10-03 21:19:28,626 DEBUG   HandlerThread:97359 [system_info.py:__init__():31] System info init
+2023-10-03 21:19:28,626 DEBUG   HandlerThread:97359 [system_info.py:__init__():46] System info init done
+2023-10-03 21:19:28,626 INFO    HandlerThread:97359 [system_monitor.py:start():181] Starting system monitor
+2023-10-03 21:19:28,626 INFO    HandlerThread:97359 [system_monitor.py:probe():201] Collecting system info
+2023-10-03 21:19:28,627 INFO    SystemMonitor:97359 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-10-03 21:19:28,628 INFO    SystemMonitor:97359 [interfaces.py:start():190] Started cpu monitoring
+2023-10-03 21:19:28,630 INFO    SystemMonitor:97359 [interfaces.py:start():190] Started disk monitoring
+2023-10-03 21:19:28,631 INFO    SystemMonitor:97359 [interfaces.py:start():190] Started gpu monitoring
+2023-10-03 21:19:28,632 INFO    SystemMonitor:97359 [interfaces.py:start():190] Started memory monitoring
+2023-10-03 21:19:28,633 INFO    SystemMonitor:97359 [interfaces.py:start():190] Started network monitoring
+2023-10-03 21:19:28,643 DEBUG   HandlerThread:97359 [system_info.py:probe():195] Probing system
+2023-10-03 21:19:28,645 DEBUG   HandlerThread:97359 [gitlib.py:_init_repo():53] git repository is invalid
+2023-10-03 21:19:28,645 DEBUG   HandlerThread:97359 [system_info.py:probe():240] Probing system done
+2023-10-03 21:19:28,645 DEBUG   HandlerThread:97359 [system_monitor.py:probe():210] {'os': 'Linux-6.2.0-33-generic-x86_64-with-glibc2.35', 'python': '3.10.9', 'heartbeatAt': '2023-10-03T12:19:28.643856', 'startedAt': '2023-10-03T12:19:28.026975', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/daehwa/Documents/MINST_GAN/GAN_RL.py', 'codePath': 'GAN_RL.py', 'host': 'daehwa', 'username': 'daehwa', 'executable': '/home/daehwa/anaconda3/envs/VerificationDev/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3.705437500000001, 'min': 2200.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3.693, 'min': 2200.0, 'max': 3400.0}, {'current': 3.91, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.689, 'min': 2200.0, 'max': 3400.0}, {'current': 3.691, 'min': 2200.0, 'max': 3400.0}, {'current': 4.06, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 4.616, 'min': 2200.0, 'max': 3400.0}, {'current': 3.684, 'min': 2200.0, 'max': 3400.0}, {'current': 3.683, 'min': 2200.0, 'max': 3400.0}, {'current': 3.663, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 4.214, 'min': 2200.0, 'max': 3400.0}, {'current': 3.4, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 4.512, 'min': 2200.0, 'max': 3400.0}, {'current': 3.691, 'min': 2200.0, 'max': 3400.0}, {'current': 4.351, 'min': 2200.0, 'max': 3400.0}, {'current': 3.689, 'min': 2200.0, 'max': 3400.0}, {'current': 3.688, 'min': 2200.0, 'max': 3400.0}, {'current': 3.694, 'min': 2200.0, 'max': 3400.0}, {'current': 4.619, 'min': 2200.0, 'max': 3400.0}, {'current': 3.701, 'min': 2200.0, 'max': 3400.0}, {'current': 4.616, 'min': 2200.0, 'max': 3400.0}, {'current': 3.156, 'min': 2200.0, 'max': 3400.0}, {'current': 3.687, 'min': 2200.0, 'max': 3400.0}, {'current': 3.692, 'min': 2200.0, 'max': 3400.0}, {'current': 3.61, 'min': 2200.0, 'max': 3400.0}, {'current': 3.4, 'min': 2200.0, 'max': 3400.0}, {'current': 3.678, 'min': 2200.0, 'max': 3400.0}, {'current': 3.692, 'min': 2200.0, 'max': 3400.0}, {'current': 4.257, 'min': 2200.0, 'max': 3400.0}], 'disk': {'total': 1832.2072448730469, 'used': 922.2707672119141}, 'gpu': 'NVIDIA GeForce RTX 4080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4080', 'memory_total': 17171480576}], 'memory': {'total': 62.68772506713867}}
+2023-10-03 21:19:28,645 INFO    HandlerThread:97359 [system_monitor.py:probe():211] Finished collecting system info
+2023-10-03 21:19:28,645 INFO    HandlerThread:97359 [system_monitor.py:probe():214] Publishing system info
+2023-10-03 21:19:28,645 DEBUG   HandlerThread:97359 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-10-03 21:19:28,646 DEBUG   HandlerThread:97359 [system_info.py:_save_pip():67] Saving pip packages done
+2023-10-03 21:19:28,646 DEBUG   HandlerThread:97359 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-10-03 21:19:29,534 INFO    Thread-17 :97359 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_211928-jvnc0vr0/files/requirements.txt
+2023-10-03 21:19:29,534 INFO    Thread-17 :97359 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_211928-jvnc0vr0/files/wandb-summary.json
+2023-10-03 21:19:29,534 INFO    Thread-17 :97359 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_211928-jvnc0vr0/files/conda-environment.yaml

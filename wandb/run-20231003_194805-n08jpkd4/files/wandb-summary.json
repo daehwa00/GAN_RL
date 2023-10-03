@@ -1,0 +1,1 @@
+{"Epoch": 25, "Discriminator Loss": 0.27056550830602644, "Generator Loss": 1.6312088429927827, "Training Accuracy": 92.4, "Test Accuracy": 92.04, "_timestamp": 1696330388.2888973, "_runtime": 302.28911232948303, "_step": 25, "_wandb": {"runtime": 301}}

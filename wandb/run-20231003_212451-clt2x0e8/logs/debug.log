@@ -1,0 +1,40 @@
+2023-10-03 21:24:51,547 INFO    Thread-12 (_run_job):103983 [wandb_setup.py:_flush():76] Current SDK version is 0.15.8
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_setup.py:_flush():76] Configure stats pid to 103983
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_setup.py:_flush():76] Loading settings from /home/daehwa/.config/wandb/settings
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_setup.py:_flush():76] Loading settings from /home/daehwa/Documents/MINST_GAN/wandb/settings
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'GAN_RL', 'entity': 'daehwa', 'root_dir': '/home/daehwa/Documents/MINST_GAN', 'run_id': 'clt2x0e8', 'sweep_param_path': '/home/daehwa/Documents/MINST_GAN/wandb/sweep-hff30obo/config-clt2x0e8.yaml', 'sweep_id': 'hff30obo'}
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'GAN_RL.py', 'program': '/home/daehwa/Documents/MINST_GAN/GAN_RL.py'}
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_init.py:_log_setup():507] Logging user logs to /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_212451-clt2x0e8/logs/debug.log
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_init.py:_log_setup():508] Logging internal logs to /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_212451-clt2x0e8/logs/debug-internal.log
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_init.py:init():547] calling init triggers
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_init.py:init():554] wandb.init called with sweep_config: {'d_learning_rate': 0.000764163790654845, 'g_learning_rate': 0.0007672925826006917}
+config: {'g_learning_rate': 1e-05, 'd_learning_rate': 1e-05}
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_init.py:init():596] starting backend
+2023-10-03 21:24:51,548 INFO    Thread-12 (_run_job):103983 [wandb_init.py:init():600] setting up manager
+2023-10-03 21:24:51,554 INFO    Thread-12 (_run_job):103983 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-10-03 21:24:51,555 INFO    Thread-12 (_run_job):103983 [wandb_init.py:init():606] backend started and connected
+2023-10-03 21:24:51,556 WARNING MsgRouterThr:103983 [router.py:message_loop():77] message_loop has been closed
+2023-10-03 21:24:51,564 INFO    Thread-12 (_run_job):103983 [wandb_run.py:_config_callback():1282] config_cb None None {'d_learning_rate': 0.000764163790654845, 'g_learning_rate': 0.0007672925826006917}
+2023-10-03 21:24:51,565 INFO    Thread-12 (_run_job):103983 [wandb_init.py:init():697] updated telemetry
+2023-10-03 21:24:51,613 ERROR   Thread-12 (_run_job):103983 [wandb_init.py:init():1175] error
+Traceback (most recent call last):
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1147, in init
+    run = wi.init()
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 707, in init
+    backend.interface.publish_header()
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 94, in publish_header
+    self._publish_header(header)
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 330, in _publish_header
+    self._publish(rec)
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/daehwa/anaconda3/envs/VerificationDev/lib/python3.10/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe

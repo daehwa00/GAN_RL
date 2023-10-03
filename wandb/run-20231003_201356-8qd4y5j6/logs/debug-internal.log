@@ -1,0 +1,19 @@
+2023-10-03 20:13:56,717 INFO    StreamThr :24799 [internal.py:wandb_internal():86] W&B internal server running at pid: 24799, started at: 2023-10-03 20:13:56.716744
+2023-10-03 20:13:56,721 DEBUG   HandlerThread:24799 [handler.py:handle_request():144] handle_request: status
+2023-10-03 20:13:56,725 INFO    WriterThread:24799 [datastore.py:open_for_write():85] open: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_201356-8qd4y5j6/run-8qd4y5j6.wandb
+2023-10-03 20:13:56,726 DEBUG   SenderThread:24799 [sender.py:send():379] send: header
+2023-10-03 20:13:56,726 DEBUG   SenderThread:24799 [sender.py:send():379] send: run
+2023-10-03 20:13:57,100 DEBUG   HandlerThread:24799 [handler.py:handle_request():144] handle_request: shutdown
+2023-10-03 20:13:57,100 INFO    HandlerThread:24799 [handler.py:finish():857] shutting down handler
+2023-10-03 20:13:57,284 INFO    SenderThread:24799 [dir_watcher.py:__init__():211] watching files in: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_201356-8qd4y5j6/files
+2023-10-03 20:13:57,284 INFO    SenderThread:24799 [sender.py:_start_run_threads():1121] run started: 8qd4y5j6 with start time 1696331636.714818
+2023-10-03 20:13:57,284 INFO    SenderThread:24799 [sender.py:finish():1552] shutting down sender
+2023-10-03 20:13:57,284 INFO    SenderThread:24799 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-03 20:13:57,726 INFO    WriterThread:24799 [datastore.py:close():294] close: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_201356-8qd4y5j6/run-8qd4y5j6.wandb
+2023-10-03 20:13:58,285 INFO    SenderThread:24799 [dir_watcher.py:finish():388] scan: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_201356-8qd4y5j6/files
+2023-10-03 20:13:58,285 INFO    SenderThread:24799 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_201356-8qd4y5j6/files/config.yaml config.yaml
+2023-10-03 20:13:58,285 INFO    SenderThread:24799 [file_pusher.py:finish():159] shutting down file pusher
+2023-10-03 20:13:58,285 INFO    SenderThread:24799 [file_pusher.py:join():164] waiting for file pusher
+2023-10-03 20:13:58,989 INFO    wandb-upload_0:24799 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_201356-8qd4y5j6/files/config.yaml
+2023-10-03 20:13:59,287 INFO    SenderThread:24799 [file_stream.py:finish():593] file stream finish called
+2023-10-03 20:13:59,559 INFO    SenderThread:24799 [file_stream.py:finish():597] file stream finish is done

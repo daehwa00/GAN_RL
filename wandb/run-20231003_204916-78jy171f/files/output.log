@@ -1,0 +1,3 @@
+/home/daehwa/Documents/MINST_GAN/GAN_RL.py:168: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.imshow(action_map_np, cmap="hot", interpolation="nearest")
+[34m[1mwandb[39m[22m: Ctrl + C detected. Stopping sweep.

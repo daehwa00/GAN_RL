@@ -1,0 +1,199 @@
+{
+    "os": "Linux-6.2.0-33-generic-x86_64-with-glibc2.35",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-10-03T11:37:37.439574",
+    "startedAt": "2023-10-03T11:37:36.767420",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/daehwa/Documents/MINST_GAN/GAN_RL.py",
+    "codePath": "GAN_RL.py",
+    "host": "daehwa",
+    "username": "daehwa",
+    "executable": "/home/daehwa/anaconda3/envs/VerificationDev/bin/python",
+    "cpu_count": 16,
+    "cpu_count_logical": 32,
+    "cpu_freq": {
+        "current": 3.715375,
+        "min": 2200.0,
+        "max": 3400.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4.23,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.607,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.4,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.637,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.648,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.686,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.69,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.8,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.709,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 4.616,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.69,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 4.314,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 4.616,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.8,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.689,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.691,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 4.309,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 4.605,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 4.613,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.931,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.655,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.2,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.8,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.673,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.693,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 4.635,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.691,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 3.693,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 4.613,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.8,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.2,
+            "min": 2200.0,
+            "max": 3400.0
+        },
+        {
+            "current": 2.2,
+            "min": 2200.0,
+            "max": 3400.0
+        }
+    ],
+    "disk": {
+        "total": 1832.2072448730469,
+        "used": 922.2822036743164
+    },
+    "gpu": "NVIDIA GeForce RTX 4080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4080",
+            "memory_total": 17171480576
+        }
+    ],
+    "memory": {
+        "total": 62.68772506713867
+    }
+}

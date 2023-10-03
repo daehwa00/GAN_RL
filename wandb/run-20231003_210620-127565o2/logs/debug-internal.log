@@ -1,0 +1,961 @@
+2023-10-03 21:06:20,992 INFO    StreamThr :82645 [internal.py:wandb_internal():86] W&B internal server running at pid: 82645, started at: 2023-10-03 21:06:20.992111
+2023-10-03 21:06:20,998 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status
+2023-10-03 21:06:21,001 INFO    WriterThread:82645 [datastore.py:open_for_write():85] open: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/run-127565o2.wandb
+2023-10-03 21:06:21,002 DEBUG   SenderThread:82645 [sender.py:send():379] send: header
+2023-10-03 21:06:21,002 DEBUG   SenderThread:82645 [sender.py:send():379] send: run
+2023-10-03 21:06:21,482 INFO    SenderThread:82645 [dir_watcher.py:__init__():211] watching files in: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files
+2023-10-03 21:06:21,482 INFO    SenderThread:82645 [sender.py:_start_run_threads():1121] run started: 127565o2 with start time 1696334780.99168
+2023-10-03 21:06:21,483 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:06:21,483 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:06:21,495 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: check_version
+2023-10-03 21:06:21,495 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: check_version
+2023-10-03 21:06:21,583 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: run_start
+2023-10-03 21:06:21,590 DEBUG   HandlerThread:82645 [system_info.py:__init__():31] System info init
+2023-10-03 21:06:21,590 DEBUG   HandlerThread:82645 [system_info.py:__init__():46] System info init done
+2023-10-03 21:06:21,590 INFO    HandlerThread:82645 [system_monitor.py:start():181] Starting system monitor
+2023-10-03 21:06:21,591 INFO    HandlerThread:82645 [system_monitor.py:probe():201] Collecting system info
+2023-10-03 21:06:21,591 INFO    SystemMonitor:82645 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-10-03 21:06:21,593 INFO    SystemMonitor:82645 [interfaces.py:start():190] Started cpu monitoring
+2023-10-03 21:06:21,593 INFO    SystemMonitor:82645 [interfaces.py:start():190] Started disk monitoring
+2023-10-03 21:06:21,594 INFO    SystemMonitor:82645 [interfaces.py:start():190] Started gpu monitoring
+2023-10-03 21:06:21,595 INFO    SystemMonitor:82645 [interfaces.py:start():190] Started memory monitoring
+2023-10-03 21:06:21,597 INFO    SystemMonitor:82645 [interfaces.py:start():190] Started network monitoring
+2023-10-03 21:06:21,604 DEBUG   HandlerThread:82645 [system_info.py:probe():195] Probing system
+2023-10-03 21:06:21,605 DEBUG   HandlerThread:82645 [gitlib.py:_init_repo():53] git repository is invalid
+2023-10-03 21:06:21,605 DEBUG   HandlerThread:82645 [system_info.py:probe():240] Probing system done
+2023-10-03 21:06:21,605 DEBUG   HandlerThread:82645 [system_monitor.py:probe():210] {'os': 'Linux-6.2.0-33-generic-x86_64-with-glibc2.35', 'python': '3.10.9', 'heartbeatAt': '2023-10-03T12:06:21.604555', 'startedAt': '2023-10-03T12:06:20.980437', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/daehwa/Documents/MINST_GAN/GAN_RL.py', 'codePath': 'GAN_RL.py', 'host': 'daehwa', 'username': 'daehwa', 'executable': '/home/daehwa/anaconda3/envs/VerificationDev/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3.0422812500000007, 'min': 2200.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 4.612, 'min': 2200.0, 'max': 3400.0}, {'current': 4.616, 'min': 2200.0, 'max': 3400.0}, {'current': 3.692, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 4.327, 'min': 2200.0, 'max': 3400.0}, {'current': 3.973, 'min': 2200.0, 'max': 3400.0}, {'current': 3.751, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.689, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.4, 'min': 2200.0, 'max': 3400.0}, {'current': 4.306, 'min': 2200.0, 'max': 3400.0}, {'current': 3.69, 'min': 2200.0, 'max': 3400.0}, {'current': 4.265, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 4.005, 'min': 2200.0, 'max': 3400.0}, {'current': 3.693, 'min': 2200.0, 'max': 3400.0}, {'current': 3.692, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.967, 'min': 2200.0, 'max': 3400.0}, {'current': 4.616, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.745, 'min': 2200.0, 'max': 3400.0}, {'current': 3.692, 'min': 2200.0, 'max': 3400.0}, {'current': 3.682, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.694, 'min': 2200.0, 'max': 3400.0}], 'disk': {'total': 1832.2072448730469, 'used': 922.271068572998}, 'gpu': 'NVIDIA GeForce RTX 4080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4080', 'memory_total': 17171480576}], 'memory': {'total': 62.68772506713867}}
+2023-10-03 21:06:21,605 INFO    HandlerThread:82645 [system_monitor.py:probe():211] Finished collecting system info
+2023-10-03 21:06:21,605 INFO    HandlerThread:82645 [system_monitor.py:probe():214] Publishing system info
+2023-10-03 21:06:21,605 DEBUG   HandlerThread:82645 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-10-03 21:06:21,606 DEBUG   HandlerThread:82645 [system_info.py:_save_pip():67] Saving pip packages done
+2023-10-03 21:06:21,606 DEBUG   HandlerThread:82645 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-10-03 21:06:22,485 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:06:22,485 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/requirements.txt
+2023-10-03 21:06:22,485 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/conda-environment.yaml
+2023-10-03 21:06:25,986 DEBUG   HandlerThread:82645 [system_info.py:_save_conda():86] Saving conda packages done
+2023-10-03 21:06:25,988 INFO    HandlerThread:82645 [system_monitor.py:probe():216] Finished publishing system info
+2023-10-03 21:06:25,991 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:06:25,991 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-10-03 21:06:26,001 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:06:26,001 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:06:26,376 DEBUG   SenderThread:82645 [sender.py:send():379] send: telemetry
+2023-10-03 21:06:26,376 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:06:26,377 DEBUG   SenderThread:82645 [sender.py:send():379] send: telemetry
+2023-10-03 21:06:26,377 DEBUG   SenderThread:82645 [sender.py:send():379] send: run
+2023-10-03 21:06:26,484 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/config.yaml
+2023-10-03 21:06:26,484 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/conda-environment.yaml
+2023-10-03 21:06:26,484 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-metadata.json
+2023-10-03 21:06:26,622 INFO    SenderThread:82645 [sender.py:send_run():999] updated run: 127565o2
+2023-10-03 21:06:26,622 DEBUG   SenderThread:82645 [sender.py:send():379] send: telemetry
+2023-10-03 21:06:26,717 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/6tmfx0hc-wandb-metadata.json
+2023-10-03 21:06:31,623 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:06:36,623 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:06:41,001 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:06:41,001 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:06:42,211 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:06:47,212 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:06:47,490 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/output.log
+2023-10-03 21:06:48,373 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:06:48,373 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_0_ccff715a0e313d68f1ad.png with policy now
+2023-10-03 21:06:48,397 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:06:48,397 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_0_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:06:48,409 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:06:48,410 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:06:48,410 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:06:48,412 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:06:48,490 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:06:48,491 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_0_ccff715a0e313d68f1ad.png
+2023-10-03 21:06:48,491 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_0_e9998519c6f9191c3ad6.png
+2023-10-03 21:06:48,491 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media
+2023-10-03 21:06:48,492 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:06:48,853 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/d7sm0m0c-media/images/Action Heatmap_0_ccff715a0e313d68f1ad.png
+2023-10-03 21:06:49,007 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/xkun7a90-media/images/Brightness Histogram_0_e9998519c6f9191c3ad6.png
+2023-10-03 21:06:49,446 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/llci2aju-media/images/Action Heatmap_0_ccff715a0e313d68f1ad.png
+2023-10-03 21:06:49,491 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/output.log
+2023-10-03 21:06:49,622 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/fnf7yx5v-media/images/Brightness Histogram_0_e9998519c6f9191c3ad6.png
+2023-10-03 21:06:52,419 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:06:53,492 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/config.yaml
+2023-10-03 21:06:56,001 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:06:56,002 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:06:58,229 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:03,229 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:08,231 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:10,564 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:07:10,564 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_1_df5f6ed18d400d49b1c3.png with policy now
+2023-10-03 21:07:10,578 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:07:10,578 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_1_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:07:10,588 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:07:10,589 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:07:10,589 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:07:10,591 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:07:11,001 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:07:11,002 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:07:11,056 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/9po0xjmj-media/images/Action Heatmap_1_df5f6ed18d400d49b1c3.png
+2023-10-03 21:07:11,107 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/e6dv87v5-media/images/Brightness Histogram_1_e9998519c6f9191c3ad6.png
+2023-10-03 21:07:11,499 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:07:11,499 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_1_df5f6ed18d400d49b1c3.png
+2023-10-03 21:07:11,500 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_1_e9998519c6f9191c3ad6.png
+2023-10-03 21:07:11,500 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:07:12,071 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/xa4o5cof-media/images/Action Heatmap_1_df5f6ed18d400d49b1c3.png
+2023-10-03 21:07:12,129 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/gr3ff9rq-media/images/Brightness Histogram_1_e9998519c6f9191c3ad6.png
+2023-10-03 21:07:14,218 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:19,218 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:21,597 DEBUG   SystemMonitor:82645 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-10-03 21:07:21,599 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:07:24,600 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:26,001 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:07:26,002 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:07:30,245 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:34,144 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:07:34,145 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_2_fed7d25216e8ab9e0857.png with policy now
+2023-10-03 21:07:34,158 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:07:34,158 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_2_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:07:34,168 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:07:34,169 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:07:34,169 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:07:34,171 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:07:34,509 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:07:34,509 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_2_e9998519c6f9191c3ad6.png
+2023-10-03 21:07:34,509 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_2_fed7d25216e8ab9e0857.png
+2023-10-03 21:07:34,510 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:07:34,614 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/ia0jlj1o-media/images/Action Heatmap_2_fed7d25216e8ab9e0857.png
+2023-10-03 21:07:35,408 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/eqsckcdh-media/images/Brightness Histogram_2_e9998519c6f9191c3ad6.png
+2023-10-03 21:07:35,966 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/58laklb6-media/images/Action Heatmap_2_fed7d25216e8ab9e0857.png
+2023-10-03 21:07:36,171 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:36,638 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/os65q2ty-media/images/Brightness Histogram_2_e9998519c6f9191c3ad6.png
+2023-10-03 21:07:41,001 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:07:41,002 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:07:41,283 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:46,284 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:51,284 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:51,600 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:07:56,017 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:07:56,017 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:07:56,233 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:07:56,342 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:07:56,342 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:07:56,342 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_3_1d7ecece5b218b0cbee9.png with policy now
+2023-10-03 21:07:56,343 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:07:56,343 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_3_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:07:56,343 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:07:56,344 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:07:56,344 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:07:56,518 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:07:56,518 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_3_e9998519c6f9191c3ad6.png
+2023-10-03 21:07:56,518 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_3_1d7ecece5b218b0cbee9.png
+2023-10-03 21:07:56,519 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:07:56,820 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/vzsu8byw-media/images/Action Heatmap_3_1d7ecece5b218b0cbee9.png
+2023-10-03 21:07:56,866 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/xard31e1-media/images/Brightness Histogram_3_e9998519c6f9191c3ad6.png
+2023-10-03 21:07:57,425 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/y989nd93-media/images/Action Heatmap_3_1d7ecece5b218b0cbee9.png
+2023-10-03 21:07:58,183 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/pgcsr8nt-media/images/Brightness Histogram_3_e9998519c6f9191c3ad6.png
+2023-10-03 21:08:01,345 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:06,345 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:11,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:08:11,007 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:08:12,226 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:17,226 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:18,874 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:08:18,874 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_4_46f412107abdc4f24c90.png with policy now
+2023-10-03 21:08:18,888 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:08:18,888 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_4_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:08:18,897 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:08:18,898 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:08:18,898 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:08:18,901 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:08:19,368 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/sulunh9a-media/images/Brightness Histogram_4_e9998519c6f9191c3ad6.png
+2023-10-03 21:08:19,373 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/xhxct5qo-media/images/Action Heatmap_4_46f412107abdc4f24c90.png
+2023-10-03 21:08:19,528 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:08:19,528 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_4_46f412107abdc4f24c90.png
+2023-10-03 21:08:19,529 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_4_e9998519c6f9191c3ad6.png
+2023-10-03 21:08:19,529 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:08:20,126 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/20b8zhpn-media/images/Action Heatmap_4_46f412107abdc4f24c90.png
+2023-10-03 21:08:20,162 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/3jkrpbiw-media/images/Brightness Histogram_4_e9998519c6f9191c3ad6.png
+2023-10-03 21:08:21,601 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:08:22,602 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:26,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:08:26,007 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:08:28,282 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:33,283 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:38,284 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:41,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:08:41,007 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:08:42,090 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:08:42,090 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_5_556a1551056bb3bd944b.png with policy now
+2023-10-03 21:08:42,104 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:08:42,104 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_5_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:08:42,113 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:08:42,114 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:08:42,114 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:08:42,116 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:08:42,539 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:08:42,539 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_5_e9998519c6f9191c3ad6.png
+2023-10-03 21:08:42,540 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_5_556a1551056bb3bd944b.png
+2023-10-03 21:08:42,540 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:08:42,582 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/mrp12w63-media/images/Brightness Histogram_5_e9998519c6f9191c3ad6.png
+2023-10-03 21:08:42,606 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/9oq9g1ol-media/images/Action Heatmap_5_556a1551056bb3bd944b.png
+2023-10-03 21:08:43,189 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/06ziet72-media/images/Action Heatmap_5_556a1551056bb3bd944b.png
+2023-10-03 21:08:43,193 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/24utbipe-media/images/Brightness Histogram_5_e9998519c6f9191c3ad6.png
+2023-10-03 21:08:44,117 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:49,118 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:51,602 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:08:54,603 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:08:56,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:08:56,007 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:09:00,307 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:03,912 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:09:03,912 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_6_86266be2e471be6e9f3d.png with policy now
+2023-10-03 21:09:03,927 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:09:03,927 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_6_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:09:03,938 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:09:03,939 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:09:03,939 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:09:03,940 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:09:04,412 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/j47lbh78-media/images/Brightness Histogram_6_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:04,450 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/tis63gcu-media/images/Action Heatmap_6_86266be2e471be6e9f3d.png
+2023-10-03 21:09:04,550 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:09:04,551 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_6_86266be2e471be6e9f3d.png
+2023-10-03 21:09:04,551 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_6_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:04,551 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:09:05,150 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/8mcvz88a-media/images/Brightness Histogram_6_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:05,246 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/gflwpnho-media/images/Action Heatmap_6_86266be2e471be6e9f3d.png
+2023-10-03 21:09:05,940 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:10,941 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:11,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:09:11,008 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:09:16,304 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:21,305 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:21,603 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:09:24,709 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:09:24,709 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_7_4997eca1646e3b2e6d71.png with policy now
+2023-10-03 21:09:24,723 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:09:24,723 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_7_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:09:24,732 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:09:24,733 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:09:24,734 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:09:24,734 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:09:25,182 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/8vyev3yx-media/images/Action Heatmap_7_4997eca1646e3b2e6d71.png
+2023-10-03 21:09:25,242 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/r5bt279s-media/images/Brightness Histogram_7_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:25,563 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:09:25,563 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_7_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:25,563 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_7_4997eca1646e3b2e6d71.png
+2023-10-03 21:09:25,563 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:09:26,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:09:26,008 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:09:26,143 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/cqr1gkpg-media/images/Brightness Histogram_7_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:26,258 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/s4egig8z-media/images/Action Heatmap_7_4997eca1646e3b2e6d71.png
+2023-10-03 21:09:27,294 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:32,296 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:37,296 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:41,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:09:41,008 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:09:42,300 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:45,481 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:09:45,481 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_8_4f7215b408ba6a66a615.png with policy now
+2023-10-03 21:09:45,495 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:09:45,495 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_8_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:09:45,507 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:09:45,507 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:09:45,508 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:09:45,510 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:09:45,575 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:09:45,575 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_8_4f7215b408ba6a66a615.png
+2023-10-03 21:09:45,575 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_8_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:45,576 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:09:45,959 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/5wzt8f72-media/images/Action Heatmap_8_4f7215b408ba6a66a615.png
+2023-10-03 21:09:45,980 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/zc1fwfpw-media/images/Brightness Histogram_8_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:46,535 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/35il6dqo-media/images/Action Heatmap_8_4f7215b408ba6a66a615.png
+2023-10-03 21:09:46,568 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/8pxvrb3k-media/images/Brightness Histogram_8_e9998519c6f9191c3ad6.png
+2023-10-03 21:09:47,510 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:51,604 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:09:52,604 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:09:56,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:09:56,008 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:09:58,215 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:03,216 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:06,327 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:10:06,327 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_9_a16b4819a98e8f305436.png with policy now
+2023-10-03 21:10:06,341 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:10:06,341 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_9_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:10:06,350 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:10:06,351 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:10:06,351 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:10:06,352 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:10:06,587 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:10:06,587 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_9_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:06,587 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_9_a16b4819a98e8f305436.png
+2023-10-03 21:10:06,587 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:10:06,841 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/lmg6dbcg-media/images/Action Heatmap_9_a16b4819a98e8f305436.png
+2023-10-03 21:10:06,857 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/uhum4tyf-media/images/Brightness Histogram_9_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:07,423 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/44x0k53e-media/images/Action Heatmap_9_a16b4819a98e8f305436.png
+2023-10-03 21:10:08,031 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/n01njayn-media/images/Brightness Histogram_9_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:08,352 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:11,007 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:10:11,008 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:10:14,247 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:19,248 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:21,605 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:10:24,606 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:26,009 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:10:26,010 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:10:27,944 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:10:27,944 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_10_1533d1f7f81fa5cd5f81.png with policy now
+2023-10-03 21:10:27,963 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:10:27,963 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_10_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:10:27,970 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:10:27,971 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:10:27,972 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:10:27,972 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:10:28,430 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/nr8ow9r5-media/images/Action Heatmap_10_1533d1f7f81fa5cd5f81.png
+2023-10-03 21:10:28,496 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/epek09c5-media/images/Brightness Histogram_10_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:28,601 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:10:28,601 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_10_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:28,602 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_10_1533d1f7f81fa5cd5f81.png
+2023-10-03 21:10:28,602 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:10:29,220 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/rku45kae-media/images/Brightness Histogram_10_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:29,226 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/n4ot5x7d-media/images/Action Heatmap_10_1533d1f7f81fa5cd5f81.png
+2023-10-03 21:10:29,973 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:34,973 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:39,974 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:41,009 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:10:41,009 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:10:45,299 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:50,300 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:50,577 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:10:50,577 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_11_74ee55d248fbd494a4d1.png with policy now
+2023-10-03 21:10:50,592 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:10:50,592 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_11_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:10:50,601 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:10:50,602 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:10:50,603 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:10:50,605 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:10:50,617 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:10:50,617 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_11_74ee55d248fbd494a4d1.png
+2023-10-03 21:10:50,617 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_11_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:50,618 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:10:51,070 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/epetnul8-media/images/Action Heatmap_11_74ee55d248fbd494a4d1.png
+2023-10-03 21:10:51,153 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/k0byax04-media/images/Brightness Histogram_11_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:51,606 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:10:51,668 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/np1x5sn0-media/images/Action Heatmap_11_74ee55d248fbd494a4d1.png
+2023-10-03 21:10:51,728 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/br9v2if8-media/images/Brightness Histogram_11_e9998519c6f9191c3ad6.png
+2023-10-03 21:10:55,607 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:10:56,009 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:10:56,009 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:11:01,288 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:06,289 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:11,009 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:11:11,009 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:11:11,312 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:11,680 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:11:11,681 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_12_a8a185384b9d17249dae.png with policy now
+2023-10-03 21:11:11,695 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:11:11,695 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_12_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:11:11,704 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:11:11,705 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:11:11,706 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:11:11,706 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:11:12,170 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/5z188qkw-media/images/Action Heatmap_12_a8a185384b9d17249dae.png
+2023-10-03 21:11:12,229 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/ok15c9dm-media/images/Brightness Histogram_12_e9998519c6f9191c3ad6.png
+2023-10-03 21:11:12,632 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:11:12,633 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_12_e9998519c6f9191c3ad6.png
+2023-10-03 21:11:12,633 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_12_a8a185384b9d17249dae.png
+2023-10-03 21:11:12,633 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:11:13,228 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/aqoq2trr-media/images/Action Heatmap_12_a8a185384b9d17249dae.png
+2023-10-03 21:11:13,265 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/jd5swfep-media/images/Brightness Histogram_12_e9998519c6f9191c3ad6.png
+2023-10-03 21:11:16,707 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:21,607 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:11:22,608 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:26,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:11:26,060 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:11:28,299 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:32,844 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:11:32,845 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_13_bff67a257181cb903ced.png with policy now
+2023-10-03 21:11:32,859 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:11:32,859 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_13_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:11:32,869 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:11:32,870 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:11:32,870 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:11:32,871 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:11:33,311 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/wehv8wwc-media/images/Action Heatmap_13_bff67a257181cb903ced.png
+2023-10-03 21:11:33,327 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/f0k3798e-media/images/Brightness Histogram_13_e9998519c6f9191c3ad6.png
+2023-10-03 21:11:33,647 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:11:33,648 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_13_e9998519c6f9191c3ad6.png
+2023-10-03 21:11:33,648 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_13_bff67a257181cb903ced.png
+2023-10-03 21:11:33,648 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:11:33,871 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:34,209 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/lnbgi5h6-media/images/Brightness Histogram_13_e9998519c6f9191c3ad6.png
+2023-10-03 21:11:34,252 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/j0e4ztpa-media/images/Action Heatmap_13_bff67a257181cb903ced.png
+2023-10-03 21:11:38,872 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:41,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:11:41,060 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:11:44,344 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:49,345 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:51,608 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:11:54,491 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:11:54,492 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_14_06d18924bf1584bf1dfb.png with policy now
+2023-10-03 21:11:54,492 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:11:54,506 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:11:54,506 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_14_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:11:54,516 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:11:54,517 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:11:54,517 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:11:54,517 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:11:54,663 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:11:54,663 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_14_e9998519c6f9191c3ad6.png
+2023-10-03 21:11:54,663 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_14_06d18924bf1584bf1dfb.png
+2023-10-03 21:11:54,664 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:11:54,969 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/nsewtd7t-media/images/Action Heatmap_14_06d18924bf1584bf1dfb.png
+2023-10-03 21:11:54,988 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/n2zz14pb-media/images/Brightness Histogram_14_e9998519c6f9191c3ad6.png
+2023-10-03 21:11:55,550 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/diveft5e-media/images/Action Heatmap_14_06d18924bf1584bf1dfb.png
+2023-10-03 21:11:56,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:11:56,060 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:11:56,136 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/h75sa0jd-media/images/Brightness Histogram_14_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:00,350 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:05,351 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:10,351 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:11,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:12:11,060 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:12:16,126 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:12:16,126 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_15_228436a52177a475fefe.png with policy now
+2023-10-03 21:12:16,127 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:16,140 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:12:16,140 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_15_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:12:16,150 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:12:16,151 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:12:16,151 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:12:16,152 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:12:16,591 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/ve7wv11v-media/images/Action Heatmap_15_228436a52177a475fefe.png
+2023-10-03 21:12:16,617 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/wn4p4bdv-media/images/Brightness Histogram_15_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:16,679 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:12:16,679 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_15_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:16,679 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_15_228436a52177a475fefe.png
+2023-10-03 21:12:16,680 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:12:17,249 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/gkk3bqzr-media/images/Brightness Histogram_15_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:17,269 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/1s1vee16-media/images/Action Heatmap_15_228436a52177a475fefe.png
+2023-10-03 21:12:21,153 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:21,617 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:12:26,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:12:26,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:12:26,317 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:31,318 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:36,319 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:37,402 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:12:37,402 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_16_acf2399cb9c4fa00255d.png with policy now
+2023-10-03 21:12:37,416 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:12:37,416 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_16_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:12:37,426 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:12:37,427 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:12:37,427 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:12:37,427 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:12:37,694 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:12:37,695 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_16_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:37,695 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_16_acf2399cb9c4fa00255d.png
+2023-10-03 21:12:37,695 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:12:37,886 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/2h62oo51-media/images/Brightness Histogram_16_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:37,993 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/3g4gmtx1-media/images/Action Heatmap_16_acf2399cb9c4fa00255d.png
+2023-10-03 21:12:38,510 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/n4jb6ejb-media/images/Brightness Histogram_16_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:38,566 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/xze013kk-media/images/Action Heatmap_16_acf2399cb9c4fa00255d.png
+2023-10-03 21:12:41,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:12:41,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:12:41,372 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:46,372 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:51,373 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:51,611 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:12:56,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:12:56,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:12:57,302 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:12:58,412 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:12:58,412 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_17_51473491dd1da8bdb488.png with policy now
+2023-10-03 21:12:58,426 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:12:58,426 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_17_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:12:58,435 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:12:58,436 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:12:58,436 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:12:58,438 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:12:58,711 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:12:58,711 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_17_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:58,711 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_17_51473491dd1da8bdb488.png
+2023-10-03 21:12:58,712 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:12:58,966 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/le8mgowd-media/images/Brightness Histogram_17_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:59,063 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/djw9ezps-media/images/Action Heatmap_17_51473491dd1da8bdb488.png
+2023-10-03 21:12:59,536 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/04c59ur7-media/images/Brightness Histogram_17_e9998519c6f9191c3ad6.png
+2023-10-03 21:12:59,627 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/5echf0p9-media/images/Action Heatmap_17_51473491dd1da8bdb488.png
+2023-10-03 21:13:02,439 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:07,439 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:11,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:13:11,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:13:13,353 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:18,354 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:19,323 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:13:19,324 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_18_ac715756aadd0d2b2924.png with policy now
+2023-10-03 21:13:19,337 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:13:19,337 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_18_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:13:19,347 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:13:19,348 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:13:19,348 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:13:19,348 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:13:19,729 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:13:19,729 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_18_ac715756aadd0d2b2924.png
+2023-10-03 21:13:19,729 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_18_e9998519c6f9191c3ad6.png
+2023-10-03 21:13:19,730 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:13:19,794 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/lp02nlls-media/images/Action Heatmap_18_ac715756aadd0d2b2924.png
+2023-10-03 21:13:19,960 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/7xyxx3pj-media/images/Brightness Histogram_18_e9998519c6f9191c3ad6.png
+2023-10-03 21:13:20,415 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/f0zvn95s-media/images/Action Heatmap_18_ac715756aadd0d2b2924.png
+2023-10-03 21:13:20,589 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/rft1t8na-media/images/Brightness Histogram_18_e9998519c6f9191c3ad6.png
+2023-10-03 21:13:21,612 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:13:23,613 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:26,060 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:13:26,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:13:29,280 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:34,281 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:39,282 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:40,667 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:13:40,667 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_19_2a445092893dccd5e92b.png with policy now
+2023-10-03 21:13:40,681 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:13:40,681 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_19_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:13:40,690 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:13:40,691 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:13:40,691 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:13:40,694 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:13:40,747 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:13:40,747 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_19_e9998519c6f9191c3ad6.png
+2023-10-03 21:13:40,747 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_19_2a445092893dccd5e92b.png
+2023-10-03 21:13:40,748 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:13:41,061 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:13:41,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:13:41,156 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/zd298eoh-media/images/Brightness Histogram_19_e9998519c6f9191c3ad6.png
+2023-10-03 21:13:41,179 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/0fg5kx1q-media/images/Action Heatmap_19_2a445092893dccd5e92b.png
+2023-10-03 21:13:41,770 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/v3z1red4-media/images/Brightness Histogram_19_e9998519c6f9191c3ad6.png
+2023-10-03 21:13:41,833 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/6miz6u3t-media/images/Action Heatmap_19_2a445092893dccd5e92b.png
+2023-10-03 21:13:44,292 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:49,292 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:51,613 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:13:54,614 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:13:56,061 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:13:56,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:14:00,344 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:01,288 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:14:01,288 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_20_8e4fa8c23f8726bb6070.png with policy now
+2023-10-03 21:14:01,302 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:14:01,302 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_20_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:14:01,311 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:14:01,312 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:14:01,312 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:14:01,313 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:14:01,761 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/9q5lyh1x-media/images/Action Heatmap_20_8e4fa8c23f8726bb6070.png
+2023-10-03 21:14:01,764 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:14:01,765 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/output.log
+2023-10-03 21:14:01,765 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_20_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:01,765 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_20_8e4fa8c23f8726bb6070.png
+2023-10-03 21:14:01,765 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:14:01,811 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/ayj9crwj-media/images/Brightness Histogram_20_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:02,317 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/3l0uhksv-media/images/Action Heatmap_20_8e4fa8c23f8726bb6070.png
+2023-10-03 21:14:02,414 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/7wxxutjh-media/images/Brightness Histogram_20_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:06,314 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:11,061 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:14:11,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:14:11,314 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:16,315 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:21,316 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:21,614 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:14:21,725 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:14:21,725 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_21_e95706e4a354325b3cf6.png with policy now
+2023-10-03 21:14:21,738 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:14:21,739 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_21_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:14:21,748 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:14:21,749 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:14:21,749 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:14:21,749 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:14:21,783 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:14:21,783 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_21_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:21,783 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_21_e95706e4a354325b3cf6.png
+2023-10-03 21:14:21,783 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:14:22,263 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/7ymsah92-media/images/Brightness Histogram_21_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:22,302 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/mixt1bwe-media/images/Action Heatmap_21_e95706e4a354325b3cf6.png
+2023-10-03 21:14:22,879 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/9j9wm2ay-media/images/Brightness Histogram_21_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:22,928 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/tufz0ucr-media/images/Action Heatmap_21_e95706e4a354325b3cf6.png
+2023-10-03 21:14:26,061 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:14:26,061 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:14:26,361 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:31,362 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:36,362 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:41,061 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:14:41,062 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:14:42,291 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:43,276 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:14:43,276 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_22_e1803eaf5660cc7ec87f.png with policy now
+2023-10-03 21:14:43,422 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:14:43,423 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_22_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:14:43,432 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:14:43,433 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:14:43,433 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:14:43,433 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:14:43,753 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/djrd8avx-media/images/Action Heatmap_22_e1803eaf5660cc7ec87f.png
+2023-10-03 21:14:43,802 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:14:43,803 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_22_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:43,803 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_22_e1803eaf5660cc7ec87f.png
+2023-10-03 21:14:43,803 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:14:43,942 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/3c1350zq-media/images/Brightness Histogram_22_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:44,366 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/sgsnojx1-media/images/Action Heatmap_22_e1803eaf5660cc7ec87f.png
+2023-10-03 21:14:44,570 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/vl81qy9b-media/images/Brightness Histogram_22_e9998519c6f9191c3ad6.png
+2023-10-03 21:14:47,434 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:51,615 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:14:52,616 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:14:56,061 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:14:56,062 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:14:58,366 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:03,366 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:04,715 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:15:04,715 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_23_dda67c0095f58d354228.png with policy now
+2023-10-03 21:15:04,729 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:15:04,729 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_23_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:15:04,738 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:15:04,740 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:15:04,740 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:15:04,740 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:15:04,823 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:15:04,823 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_23_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:04,824 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_23_dda67c0095f58d354228.png
+2023-10-03 21:15:04,824 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:15:05,195 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/ahcu01d5-media/images/Action Heatmap_23_dda67c0095f58d354228.png
+2023-10-03 21:15:05,355 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/ii7qqudp-media/images/Brightness Histogram_23_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:05,926 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/4zbmfyhu-media/images/Action Heatmap_23_dda67c0095f58d354228.png
+2023-10-03 21:15:06,562 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/r459kg2a-media/images/Brightness Histogram_23_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:08,741 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:11,061 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:15:11,062 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:15:14,345 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:19,346 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:21,616 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:15:24,617 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:26,122 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:15:26,122 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:15:26,123 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_24_3c3ab47ee8d8c0faf4c8.png with policy now
+2023-10-03 21:15:26,123 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:15:26,179 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:15:26,331 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:15:26,331 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_24_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:15:26,332 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:15:26,332 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:15:26,333 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:15:26,602 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/p8ni6dhr-media/images/Action Heatmap_24_3c3ab47ee8d8c0faf4c8.png
+2023-10-03 21:15:26,844 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:15:26,845 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_24_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:26,845 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_24_3c3ab47ee8d8c0faf4c8.png
+2023-10-03 21:15:26,845 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:15:26,850 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/bfy7kzqv-media/images/Brightness Histogram_24_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:27,411 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/62c421md-media/images/Action Heatmap_24_3c3ab47ee8d8c0faf4c8.png
+2023-10-03 21:15:27,426 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/iai6sbrs-media/images/Brightness Histogram_24_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:30,334 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:35,334 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:40,335 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:41,122 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:15:41,122 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:15:45,426 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:48,063 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:15:48,064 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_25_7b5a85424ed09ddef177.png with policy now
+2023-10-03 21:15:48,107 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:15:48,108 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:15:48,108 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_25_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:15:48,109 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:15:48,109 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:15:48,109 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:15:48,551 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/p3ltotj0-media/images/Action Heatmap_25_7b5a85424ed09ddef177.png
+2023-10-03 21:15:48,598 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/5gxsx99t-media/images/Brightness Histogram_25_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:48,866 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:15:48,867 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_25_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:48,867 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_25_7b5a85424ed09ddef177.png
+2023-10-03 21:15:48,867 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:15:49,447 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/97tjbt59-media/images/Action Heatmap_25_7b5a85424ed09ddef177.png
+2023-10-03 21:15:49,461 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/ceteqayk-media/images/Brightness Histogram_25_e9998519c6f9191c3ad6.png
+2023-10-03 21:15:51,110 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:51,617 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:15:56,122 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:15:56,122 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:15:56,123 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:16:01,413 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:06,414 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:09,068 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:16:09,068 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_26_eb942703ac035a9abb49.png with policy now
+2023-10-03 21:16:09,111 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:16:09,111 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:16:09,112 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_26_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:16:09,112 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:16:09,112 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:16:09,113 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:16:09,536 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/113vz1f7-media/images/Action Heatmap_26_eb942703ac035a9abb49.png
+2023-10-03 21:16:09,637 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/ltdx6gs3-media/images/Brightness Histogram_26_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:09,888 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:16:09,888 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_26_eb942703ac035a9abb49.png
+2023-10-03 21:16:09,889 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_26_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:09,889 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:16:10,514 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/t6ea0y2x-media/images/Brightness Histogram_26_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:10,532 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/3zve49vc-media/images/Action Heatmap_26_eb942703ac035a9abb49.png
+2023-10-03 21:16:11,122 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:16:11,122 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:16:12,334 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:17,335 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:21,618 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:16:22,619 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:26,186 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:16:26,186 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:16:28,472 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:29,832 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:16:29,832 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_27_7bd3cf4bc44fd97f9c53.png with policy now
+2023-10-03 21:16:29,846 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:16:29,846 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_27_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:16:29,856 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:16:29,857 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:16:29,857 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:16:29,857 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:16:29,908 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:16:29,909 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_27_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:29,909 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_27_7bd3cf4bc44fd97f9c53.png
+2023-10-03 21:16:29,910 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:16:30,339 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/7gz33xte-media/images/Brightness Histogram_27_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:30,441 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/6cf3h4q7-media/images/Action Heatmap_27_7bd3cf4bc44fd97f9c53.png
+2023-10-03 21:16:30,955 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/uj86s1q5-media/images/Brightness Histogram_27_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:31,047 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/xn0yowmw-media/images/Action Heatmap_27_7bd3cf4bc44fd97f9c53.png
+2023-10-03 21:16:33,858 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:38,859 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:41,186 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:16:41,187 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:16:44,487 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:49,487 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:51,619 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:16:51,848 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:16:51,849 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_28_9b8a7081c4b7c0ddb710.png with policy now
+2023-10-03 21:16:51,895 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:16:51,895 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:16:51,896 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_28_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:16:51,896 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:16:51,896 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:16:51,897 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:16:51,933 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:16:51,933 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_28_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:51,933 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_28_9b8a7081c4b7c0ddb710.png
+2023-10-03 21:16:51,933 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:16:52,304 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/10s8s9xy-media/images/Action Heatmap_28_9b8a7081c4b7c0ddb710.png
+2023-10-03 21:16:52,364 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/wod2tgw0-media/images/Brightness Histogram_28_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:52,989 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/sby97jd4-media/images/Action Heatmap_28_9b8a7081c4b7c0ddb710.png
+2023-10-03 21:16:53,581 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/s6urlknb-media/images/Brightness Histogram_28_e9998519c6f9191c3ad6.png
+2023-10-03 21:16:54,897 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:16:56,186 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:16:56,187 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:17:00,457 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:17:05,458 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:17:10,459 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:17:11,186 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:17:11,187 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:17:13,678 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:17:13,679 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_29_568297377a2c9f2a3e86.png with policy now
+2023-10-03 21:17:13,693 DEBUG   SenderThread:82645 [sender.py:send():379] send: files
+2023-10-03 21:17:13,693 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file media/images/Brightness Histogram_29_e9998519c6f9191c3ad6.png with policy now
+2023-10-03 21:17:13,702 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:17:13,703 DEBUG   SenderThread:82645 [sender.py:send():379] send: history
+2023-10-03 21:17:13,703 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:17:13,704 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:17:13,957 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:17:13,958 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_29_568297377a2c9f2a3e86.png
+2023-10-03 21:17:13,958 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_29_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:13,958 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images
+2023-10-03 21:17:14,140 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/efnm22hb-media/images/Action Heatmap_29_568297377a2c9f2a3e86.png
+2023-10-03 21:17:14,169 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/wavmclkj-media/images/Brightness Histogram_29_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:14,742 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/bz8ikorr-media/images/Action Heatmap_29_568297377a2c9f2a3e86.png
+2023-10-03 21:17:14,791 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /tmp/tmp_ve72e58wandb/h5vzx9zu-media/images/Brightness Histogram_29_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:15,704 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:17:20,705 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:17:21,620 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:17:26,240 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:17:26,241 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:17:26,454 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:17:30,776 DEBUG   SenderThread:82645 [sender.py:send():379] send: exit
+2023-10-03 21:17:30,777 INFO    SenderThread:82645 [sender.py:send_exit():584] handling exit code: 0
+2023-10-03 21:17:30,777 INFO    SenderThread:82645 [sender.py:send_exit():586] handling runtime: 669
+2023-10-03 21:17:30,778 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:17:30,778 INFO    SenderThread:82645 [sender.py:send_exit():592] send defer
+2023-10-03 21:17:30,778 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:30,778 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 0
+2023-10-03 21:17:30,778 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:30,778 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-10-03 21:17:30,778 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 1
+2023-10-03 21:17:30,779 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:30,779 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 1
+2023-10-03 21:17:30,779 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:30,779 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-10-03 21:17:30,779 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 2
+2023-10-03 21:17:30,779 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:30,779 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 2
+2023-10-03 21:17:30,779 INFO    HandlerThread:82645 [system_monitor.py:finish():190] Stopping system monitor
+2023-10-03 21:17:30,779 DEBUG   SystemMonitor:82645 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-10-03 21:17:30,779 DEBUG   SystemMonitor:82645 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-10-03 21:17:30,780 INFO    HandlerThread:82645 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-03 21:17:30,781 INFO    HandlerThread:82645 [interfaces.py:finish():202] Joined disk monitor
+2023-10-03 21:17:30,819 INFO    HandlerThread:82645 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-03 21:17:30,820 INFO    HandlerThread:82645 [interfaces.py:finish():202] Joined memory monitor
+2023-10-03 21:17:30,820 INFO    HandlerThread:82645 [interfaces.py:finish():202] Joined network monitor
+2023-10-03 21:17:30,820 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:30,820 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-10-03 21:17:30,820 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 3
+2023-10-03 21:17:30,820 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:30,821 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 3
+2023-10-03 21:17:30,822 DEBUG   SenderThread:82645 [sender.py:send():379] send: stats
+2023-10-03 21:17:30,823 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:30,823 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-10-03 21:17:30,823 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 4
+2023-10-03 21:17:30,823 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:30,823 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 4
+2023-10-03 21:17:30,823 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:30,823 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-10-03 21:17:30,823 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 5
+2023-10-03 21:17:30,823 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:30,824 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 5
+2023-10-03 21:17:30,824 DEBUG   SenderThread:82645 [sender.py:send():379] send: summary
+2023-10-03 21:17:30,824 INFO    SenderThread:82645 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:17:30,824 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:30,825 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-10-03 21:17:30,825 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 6
+2023-10-03 21:17:30,825 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:30,825 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 6
+2023-10-03 21:17:30,825 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:30,825 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-10-03 21:17:30,825 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 7
+2023-10-03 21:17:30,825 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:17:30,825 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:30,825 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 7
+2023-10-03 21:17:30,825 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:30,826 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-10-03 21:17:30,976 INFO    Thread-17 :82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:17:31,778 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:17:31,932 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 8
+2023-10-03 21:17:31,932 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:17:31,932 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:31,933 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 8
+2023-10-03 21:17:31,933 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:31,933 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-10-03 21:17:31,933 INFO    SenderThread:82645 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-03 21:17:31,934 INFO    SenderThread:82645 [job_builder.py:_get_source_type():411] no source found
+2023-10-03 21:17:31,934 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 9
+2023-10-03 21:17:31,934 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:31,934 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 9
+2023-10-03 21:17:31,934 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:31,934 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-10-03 21:17:31,934 INFO    SenderThread:82645 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-03 21:17:31,978 INFO    SenderThread:82645 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/output.log
+2023-10-03 21:17:31,979 INFO    SenderThread:82645 [dir_watcher.py:finish():388] scan: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files
+2023-10-03 21:17:31,979 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json wandb-summary.json
+2023-10-03 21:17:31,979 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/config.yaml config.yaml
+2023-10-03 21:17:31,979 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/output.log output.log
+2023-10-03 21:17:31,979 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/conda-environment.yaml conda-environment.yaml
+2023-10-03 21:17:31,980 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-metadata.json wandb-metadata.json
+2023-10-03 21:17:31,980 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/requirements.txt requirements.txt
+2023-10-03 21:17:31,994 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_15_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_15_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,994 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_11_74ee55d248fbd494a4d1.png media/images/Action Heatmap_11_74ee55d248fbd494a4d1.png
+2023-10-03 21:17:31,994 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_17_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_17_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,994 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_25_7b5a85424ed09ddef177.png media/images/Action Heatmap_25_7b5a85424ed09ddef177.png
+2023-10-03 21:17:31,997 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_3_1d7ecece5b218b0cbee9.png media/images/Action Heatmap_3_1d7ecece5b218b0cbee9.png
+2023-10-03 21:17:31,997 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_24_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_24_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,997 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_4_46f412107abdc4f24c90.png media/images/Action Heatmap_4_46f412107abdc4f24c90.png
+2023-10-03 21:17:31,997 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_15_228436a52177a475fefe.png media/images/Action Heatmap_15_228436a52177a475fefe.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_21_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_21_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_22_e1803eaf5660cc7ec87f.png media/images/Action Heatmap_22_e1803eaf5660cc7ec87f.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_28_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_28_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_9_a16b4819a98e8f305436.png media/images/Action Heatmap_9_a16b4819a98e8f305436.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_12_a8a185384b9d17249dae.png media/images/Action Heatmap_12_a8a185384b9d17249dae.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_12_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_12_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_22_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_22_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_2_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_2_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,998 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_28_9b8a7081c4b7c0ddb710.png media/images/Action Heatmap_28_9b8a7081c4b7c0ddb710.png
+2023-10-03 21:17:31,999 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_1_df5f6ed18d400d49b1c3.png media/images/Action Heatmap_1_df5f6ed18d400d49b1c3.png
+2023-10-03 21:17:31,999 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_21_e95706e4a354325b3cf6.png media/images/Action Heatmap_21_e95706e4a354325b3cf6.png
+2023-10-03 21:17:31,999 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_19_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_19_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,999 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_3_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_3_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,999 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_14_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_14_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:31,999 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_14_06d18924bf1584bf1dfb.png media/images/Action Heatmap_14_06d18924bf1584bf1dfb.png
+2023-10-03 21:17:31,999 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_5_556a1551056bb3bd944b.png media/images/Action Heatmap_5_556a1551056bb3bd944b.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_11_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_11_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_24_3c3ab47ee8d8c0faf4c8.png media/images/Action Heatmap_24_3c3ab47ee8d8c0faf4c8.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_18_ac715756aadd0d2b2924.png media/images/Action Heatmap_18_ac715756aadd0d2b2924.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_9_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_9_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_2_fed7d25216e8ab9e0857.png media/images/Action Heatmap_2_fed7d25216e8ab9e0857.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_27_7bd3cf4bc44fd97f9c53.png media/images/Action Heatmap_27_7bd3cf4bc44fd97f9c53.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_20_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_20_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_26_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_26_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_16_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_16_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_6_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_6_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_13_bff67a257181cb903ced.png media/images/Action Heatmap_13_bff67a257181cb903ced.png
+2023-10-03 21:17:32,000 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_4_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_4_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_26_eb942703ac035a9abb49.png media/images/Action Heatmap_26_eb942703ac035a9abb49.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_10_1533d1f7f81fa5cd5f81.png media/images/Action Heatmap_10_1533d1f7f81fa5cd5f81.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_0_ccff715a0e313d68f1ad.png media/images/Action Heatmap_0_ccff715a0e313d68f1ad.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_7_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_7_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_13_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_13_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_17_51473491dd1da8bdb488.png media/images/Action Heatmap_17_51473491dd1da8bdb488.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_18_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_18_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_1_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_1_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,001 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_25_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_25_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_6_86266be2e471be6e9f3d.png media/images/Action Heatmap_6_86266be2e471be6e9f3d.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_20_8e4fa8c23f8726bb6070.png media/images/Action Heatmap_20_8e4fa8c23f8726bb6070.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_23_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_23_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_23_dda67c0095f58d354228.png media/images/Action Heatmap_23_dda67c0095f58d354228.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_10_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_10_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_8_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_8_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_7_4997eca1646e3b2e6d71.png media/images/Action Heatmap_7_4997eca1646e3b2e6d71.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_29_568297377a2c9f2a3e86.png media/images/Action Heatmap_29_568297377a2c9f2a3e86.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_27_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_27_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_29_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_29_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,002 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_8_4f7215b408ba6a66a615.png media/images/Action Heatmap_8_4f7215b408ba6a66a615.png
+2023-10-03 21:17:32,003 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_0_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_0_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,003 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_16_acf2399cb9c4fa00255d.png media/images/Action Heatmap_16_acf2399cb9c4fa00255d.png
+2023-10-03 21:17:32,003 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Brightness Histogram_5_e9998519c6f9191c3ad6.png media/images/Brightness Histogram_5_e9998519c6f9191c3ad6.png
+2023-10-03 21:17:32,003 INFO    SenderThread:82645 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/media/images/Action Heatmap_19_2a445092893dccd5e92b.png media/images/Action Heatmap_19_2a445092893dccd5e92b.png
+2023-10-03 21:17:32,003 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 10
+2023-10-03 21:17:32,003 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:32,003 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 10
+2023-10-03 21:17:32,003 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:32,003 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-10-03 21:17:32,004 INFO    SenderThread:82645 [file_pusher.py:finish():159] shutting down file pusher
+2023-10-03 21:17:32,453 INFO    wandb-upload_0:82645 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/config.yaml
+2023-10-03 21:17:32,468 INFO    wandb-upload_1:82645 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/wandb-summary.json
+2023-10-03 21:17:32,638 INFO    wandb-upload_2:82645 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/requirements.txt
+2023-10-03 21:17:32,639 INFO    wandb-upload_4:82645 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/conda-environment.yaml
+2023-10-03 21:17:32,778 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:17:32,779 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:17:33,602 INFO    wandb-upload_3:82645 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_210620-127565o2/files/output.log
+2023-10-03 21:17:33,780 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:17:33,781 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:17:33,802 INFO    Thread-16 (_thread_body):82645 [sender.py:transition_state():612] send defer: 11
+2023-10-03 21:17:33,803 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:33,804 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 11
+2023-10-03 21:17:33,804 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:33,804 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-10-03 21:17:33,804 INFO    SenderThread:82645 [file_pusher.py:join():164] waiting for file pusher
+2023-10-03 21:17:33,804 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 12
+2023-10-03 21:17:33,805 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:33,805 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 12
+2023-10-03 21:17:33,805 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:33,805 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-10-03 21:17:33,805 INFO    SenderThread:82645 [file_stream.py:finish():593] file stream finish called
+2023-10-03 21:17:34,781 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:17:34,802 INFO    SenderThread:82645 [file_stream.py:finish():597] file stream finish is done
+2023-10-03 21:17:34,802 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 13
+2023-10-03 21:17:34,802 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:17:34,803 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:34,803 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 13
+2023-10-03 21:17:34,803 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:34,803 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-10-03 21:17:34,803 INFO    SenderThread:82645 [sender.py:transition_state():612] send defer: 14
+2023-10-03 21:17:34,804 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:17:34,804 INFO    HandlerThread:82645 [handler.py:handle_request_defer():170] handle defer: 14
+2023-10-03 21:17:34,804 DEBUG   SenderThread:82645 [sender.py:send():379] send: final
+2023-10-03 21:17:34,804 DEBUG   SenderThread:82645 [sender.py:send():379] send: footer
+2023-10-03 21:17:34,804 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:17:34,804 INFO    SenderThread:82645 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-10-03 21:17:34,805 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:17:34,806 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:17:34,806 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:17:34,806 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: server_info
+2023-10-03 21:17:34,807 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:17:34,807 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: get_summary
+2023-10-03 21:17:34,808 DEBUG   SenderThread:82645 [sender.py:send_request():406] send_request: server_info
+2023-10-03 21:17:34,808 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: sampled_history
+2023-10-03 21:17:34,812 DEBUG   HandlerThread:82645 [handler.py:handle_request():144] handle_request: job_info

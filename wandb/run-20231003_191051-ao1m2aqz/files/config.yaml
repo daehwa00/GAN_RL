@@ -1,0 +1,33 @@
+wandb_version: 1
+
+d_learning_rate:
+  desc: null
+  value: 0.0004045229598229029
+g_learning_rate:
+  desc: null
+  value: 0.00023613408118383937
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.9
+    cli_version: 0.15.8
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1696327851.757622
+    t:
+      1:
+      - 1
+      - 41
+      - 55
+      2:
+      - 1
+      - 41
+      - 55
+      3:
+      - 23
+      - 37
+      4: 3.10.9
+      5: 0.15.8
+      8:
+      - 5

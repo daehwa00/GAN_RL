@@ -1,0 +1,2 @@
+/home/daehwa/Documents/MINST_GAN/GAN_RL.py:168: UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+  plt.colorbar()

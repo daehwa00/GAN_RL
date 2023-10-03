@@ -1,0 +1,394 @@
+2023-10-03 21:31:36,312 INFO    StreamThr :112161 [internal.py:wandb_internal():86] W&B internal server running at pid: 112161, started at: 2023-10-03 21:31:36.311419
+2023-10-03 21:31:36,315 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status
+2023-10-03 21:31:36,320 INFO    WriterThread:112161 [datastore.py:open_for_write():85] open: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/run-joj4gb5r.wandb
+2023-10-03 21:31:36,321 DEBUG   SenderThread:112161 [sender.py:send():379] send: header
+2023-10-03 21:31:36,321 DEBUG   SenderThread:112161 [sender.py:send():379] send: run
+2023-10-03 21:31:36,893 INFO    SenderThread:112161 [dir_watcher.py:__init__():211] watching files in: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files
+2023-10-03 21:31:36,893 INFO    SenderThread:112161 [sender.py:_start_run_threads():1121] run started: joj4gb5r with start time 1696336296.310737
+2023-10-03 21:31:36,893 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:31:36,893 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:31:36,906 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: check_version
+2023-10-03 21:31:36,906 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: check_version
+2023-10-03 21:31:36,953 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: run_start
+2023-10-03 21:31:36,962 DEBUG   HandlerThread:112161 [system_info.py:__init__():31] System info init
+2023-10-03 21:31:36,962 DEBUG   HandlerThread:112161 [system_info.py:__init__():46] System info init done
+2023-10-03 21:31:36,962 INFO    HandlerThread:112161 [system_monitor.py:start():181] Starting system monitor
+2023-10-03 21:31:36,962 INFO    HandlerThread:112161 [system_monitor.py:probe():201] Collecting system info
+2023-10-03 21:31:36,963 INFO    SystemMonitor:112161 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-10-03 21:31:36,963 INFO    SystemMonitor:112161 [interfaces.py:start():190] Started cpu monitoring
+2023-10-03 21:31:36,965 INFO    SystemMonitor:112161 [interfaces.py:start():190] Started disk monitoring
+2023-10-03 21:31:36,966 INFO    SystemMonitor:112161 [interfaces.py:start():190] Started gpu monitoring
+2023-10-03 21:31:36,967 INFO    SystemMonitor:112161 [interfaces.py:start():190] Started memory monitoring
+2023-10-03 21:31:36,968 INFO    SystemMonitor:112161 [interfaces.py:start():190] Started network monitoring
+2023-10-03 21:31:36,975 DEBUG   HandlerThread:112161 [system_info.py:probe():195] Probing system
+2023-10-03 21:31:36,976 DEBUG   HandlerThread:112161 [gitlib.py:_init_repo():53] git repository is invalid
+2023-10-03 21:31:36,976 DEBUG   HandlerThread:112161 [system_info.py:probe():240] Probing system done
+2023-10-03 21:31:36,976 DEBUG   HandlerThread:112161 [system_monitor.py:probe():210] {'os': 'Linux-6.2.0-33-generic-x86_64-with-glibc2.35', 'python': '3.10.9', 'heartbeatAt': '2023-10-03T12:31:36.975066', 'startedAt': '2023-10-03T12:31:36.298273', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/daehwa/Documents/MINST_GAN/GAN_RL.py', 'codePath': 'GAN_RL.py', 'host': 'daehwa', 'username': 'daehwa', 'executable': '/home/daehwa/anaconda3/envs/VerificationDev/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3.526687500000001, 'min': 2200.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3.71, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.704, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 4.615, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.697, 'min': 2200.0, 'max': 3400.0}, {'current': 4.572, 'min': 2200.0, 'max': 3400.0}, {'current': 4.218, 'min': 2200.0, 'max': 3400.0}, {'current': 3.712, 'min': 2200.0, 'max': 3400.0}, {'current': 4.342, 'min': 2200.0, 'max': 3400.0}, {'current': 4.64, 'min': 2200.0, 'max': 3400.0}, {'current': 3.71, 'min': 2200.0, 'max': 3400.0}, {'current': 3.995, 'min': 2200.0, 'max': 3400.0}, {'current': 4.637, 'min': 2200.0, 'max': 3400.0}, {'current': 3.854, 'min': 2200.0, 'max': 3400.0}, {'current': 3.712, 'min': 2200.0, 'max': 3400.0}, {'current': 3.4, 'min': 2200.0, 'max': 3400.0}, {'current': 3.912, 'min': 2200.0, 'max': 3400.0}, {'current': 4.641, 'min': 2200.0, 'max': 3400.0}, {'current': 3.697, 'min': 2200.0, 'max': 3400.0}, {'current': 3.709, 'min': 2200.0, 'max': 3400.0}, {'current': 3.709, 'min': 2200.0, 'max': 3400.0}, {'current': 4.19, 'min': 2200.0, 'max': 3400.0}, {'current': 4.553, 'min': 2200.0, 'max': 3400.0}, {'current': 3.711, 'min': 2200.0, 'max': 3400.0}, {'current': 3.714, 'min': 2200.0, 'max': 3400.0}, {'current': 2.2, 'min': 2200.0, 'max': 3400.0}, {'current': 3.699, 'min': 2200.0, 'max': 3400.0}, {'current': 3.882, 'min': 2200.0, 'max': 3400.0}, {'current': 3.331, 'min': 2200.0, 'max': 3400.0}], 'disk': {'total': 1832.2072448730469, 'used': 922.2736358642578}, 'gpu': 'NVIDIA GeForce RTX 4080', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4080', 'memory_total': 17171480576}], 'memory': {'total': 62.68772506713867}}
+2023-10-03 21:31:36,976 INFO    HandlerThread:112161 [system_monitor.py:probe():211] Finished collecting system info
+2023-10-03 21:31:36,976 INFO    HandlerThread:112161 [system_monitor.py:probe():214] Publishing system info
+2023-10-03 21:31:36,976 DEBUG   HandlerThread:112161 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-10-03 21:31:36,977 DEBUG   HandlerThread:112161 [system_info.py:_save_pip():67] Saving pip packages done
+2023-10-03 21:31:36,977 DEBUG   HandlerThread:112161 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-10-03 21:31:37,896 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/requirements.txt
+2023-10-03 21:31:37,896 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:31:37,896 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/conda-environment.yaml
+2023-10-03 21:31:41,347 DEBUG   HandlerThread:112161 [system_info.py:_save_conda():86] Saving conda packages done
+2023-10-03 21:31:41,349 INFO    HandlerThread:112161 [system_monitor.py:probe():216] Finished publishing system info
+2023-10-03 21:31:41,353 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:31:41,353 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-10-03 21:31:41,354 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:31:41,360 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:31:41,361 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:31:41,700 DEBUG   SenderThread:112161 [sender.py:send():379] send: telemetry
+2023-10-03 21:31:41,700 DEBUG   SenderThread:112161 [sender.py:send():379] send: telemetry
+2023-10-03 21:31:41,701 DEBUG   SenderThread:112161 [sender.py:send():379] send: run
+2023-10-03 21:31:41,896 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/config.yaml
+2023-10-03 21:31:41,896 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/conda-environment.yaml
+2023-10-03 21:31:41,897 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-metadata.json
+2023-10-03 21:31:41,932 INFO    SenderThread:112161 [sender.py:send_run():999] updated run: joj4gb5r
+2023-10-03 21:31:41,932 DEBUG   SenderThread:112161 [sender.py:send():379] send: telemetry
+2023-10-03 21:31:42,099 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/bl75ukq1-wandb-metadata.json
+2023-10-03 21:31:46,933 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:31:51,934 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:31:56,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:31:56,361 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:31:57,618 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:02,620 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:03,799 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:32:03,800 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_0_37769f25194a92c84519.png with policy now
+2023-10-03 21:32:03,805 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:32:03,807 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:32:03,808 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:32:03,810 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:32:03,903 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:32:03,903 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_0_37769f25194a92c84519.png
+2023-10-03 21:32:03,904 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media
+2023-10-03 21:32:03,904 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:32:04,284 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/exe53gps-media/images/Action Heatmap_0_37769f25194a92c84519.png
+2023-10-03 21:32:04,834 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/4doei308-media/images/Action Heatmap_0_37769f25194a92c84519.png
+2023-10-03 21:32:07,816 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:08,905 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/config.yaml
+2023-10-03 21:32:11,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:32:11,361 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:32:13,645 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:18,645 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:23,646 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:25,806 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:32:25,806 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_1_e351ebd8237daf506b11.png with policy now
+2023-10-03 21:32:25,811 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:32:25,812 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:32:25,813 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:32:25,815 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:32:25,911 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:32:25,911 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_1_e351ebd8237daf506b11.png
+2023-10-03 21:32:25,911 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:32:26,273 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/w1u0muj9-media/images/Action Heatmap_1_e351ebd8237daf506b11.png
+2023-10-03 21:32:26,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:32:26,361 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:32:26,858 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/ibuynvu5-media/images/Action Heatmap_1_e351ebd8237daf506b11.png
+2023-10-03 21:32:28,656 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:33,657 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:36,968 DEBUG   SystemMonitor:112161 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-10-03 21:32:36,970 DEBUG   SenderThread:112161 [sender.py:send():379] send: stats
+2023-10-03 21:32:38,970 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:41,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:32:41,361 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:32:44,603 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:48,157 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:32:48,158 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_2_3f2af23c2765708a42ad.png with policy now
+2023-10-03 21:32:48,163 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:32:48,164 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:32:48,164 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:32:48,167 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:32:48,651 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/2rydq7fr-media/images/Action Heatmap_2_3f2af23c2765708a42ad.png
+2023-10-03 21:32:48,919 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:32:48,920 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_2_3f2af23c2765708a42ad.png
+2023-10-03 21:32:48,920 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:32:49,511 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/h4b1jg21-media/images/Action Heatmap_2_3f2af23c2765708a42ad.png
+2023-10-03 21:32:50,167 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:55,168 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:32:56,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:32:56,362 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:33:00,660 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:05,660 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:06,971 DEBUG   SenderThread:112161 [sender.py:send():379] send: stats
+2023-10-03 21:33:10,689 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:33:10,690 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_3_e4ad0e44249bd1f87f95.png with policy now
+2023-10-03 21:33:10,690 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:10,694 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:33:10,695 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:33:10,696 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:33:10,696 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:33:10,928 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:33:10,928 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_3_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:10,928 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:33:11,157 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/626d6r3v-media/images/Action Heatmap_3_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:11,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:33:11,361 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:33:11,734 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/at4eegv4-media/images/Action Heatmap_3_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:16,662 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:21,663 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:26,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:33:26,362 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:33:26,671 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:31,671 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:32,602 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:33:32,602 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_4_e4ad0e44249bd1f87f95.png with policy now
+2023-10-03 21:33:32,606 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:33:32,608 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:33:32,608 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:33:32,610 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:33:32,936 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:33:32,937 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_4_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:32,937 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:33:33,088 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/hvs0octo-media/images/Action Heatmap_4_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:33,645 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/2mj1ueo3-media/images/Action Heatmap_4_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:36,972 DEBUG   SenderThread:112161 [sender.py:send():379] send: stats
+2023-10-03 21:33:36,972 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:41,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:33:41,362 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:33:42,666 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:47,666 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:52,667 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:33:54,438 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:33:54,438 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_5_e4ad0e44249bd1f87f95.png with policy now
+2023-10-03 21:33:54,442 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:33:54,444 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:33:54,444 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:33:54,445 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:33:54,914 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/o6vpl1sa-media/images/Action Heatmap_5_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:54,945 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:33:54,945 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_5_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:54,945 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:33:55,529 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/vkytfrzf-media/images/Action Heatmap_5_e4ad0e44249bd1f87f95.png
+2023-10-03 21:33:56,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:33:56,362 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:33:58,659 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:03,659 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:06,973 DEBUG   SenderThread:112161 [sender.py:send():379] send: stats
+2023-10-03 21:34:08,973 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:11,361 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:34:11,362 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:34:14,588 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:16,271 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:34:16,271 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_6_e351ebd8237daf506b11.png with policy now
+2023-10-03 21:34:16,275 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:34:16,283 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:34:16,284 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:34:16,286 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:34:16,745 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/l4b4ybcj-media/images/Action Heatmap_6_e351ebd8237daf506b11.png
+2023-10-03 21:34:16,954 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:34:16,954 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_6_e351ebd8237daf506b11.png
+2023-10-03 21:34:16,954 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:34:17,527 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/0escjnwy-media/images/Action Heatmap_6_e351ebd8237daf506b11.png
+2023-10-03 21:34:20,287 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:25,288 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:26,362 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:34:26,362 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:34:30,620 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:35,621 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:36,974 DEBUG   SenderThread:112161 [sender.py:send():379] send: stats
+2023-10-03 21:34:38,685 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:34:38,686 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_7_e351ebd8237daf506b11.png with policy now
+2023-10-03 21:34:38,690 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:34:38,691 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:34:38,692 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:34:38,693 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:34:38,963 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:34:38,963 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_7_e351ebd8237daf506b11.png
+2023-10-03 21:34:38,964 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:34:39,155 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/v070dazh-media/images/Action Heatmap_7_e351ebd8237daf506b11.png
+2023-10-03 21:34:39,760 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/qvc58bb8-media/images/Action Heatmap_7_e351ebd8237daf506b11.png
+2023-10-03 21:34:40,693 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:41,362 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:34:41,362 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:34:46,639 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:51,640 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:34:56,362 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:34:56,362 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:34:57,600 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:01,181 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:35:01,181 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_8_e4ad0e44249bd1f87f95.png with policy now
+2023-10-03 21:35:01,186 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:35:01,187 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:35:01,187 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:35:01,190 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:35:01,660 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/b3ntjn4z-media/images/Action Heatmap_8_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:01,973 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:35:01,973 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_8_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:01,974 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:35:02,548 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/0zsu6mbd-media/images/Action Heatmap_8_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:03,190 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:06,975 DEBUG   SenderThread:112161 [sender.py:send():379] send: stats
+2023-10-03 21:35:08,976 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:11,362 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:35:11,363 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:35:14,578 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:19,579 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:22,879 DEBUG   SenderThread:112161 [sender.py:send():379] send: files
+2023-10-03 21:35:22,880 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file media/images/Action Heatmap_9_e4ad0e44249bd1f87f95.png with policy now
+2023-10-03 21:35:22,884 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: partial_history
+2023-10-03 21:35:22,885 DEBUG   SenderThread:112161 [sender.py:send():379] send: history
+2023-10-03 21:35:22,885 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: summary_record
+2023-10-03 21:35:22,886 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:35:22,983 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:35:22,984 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_9_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:22,984 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images
+2023-10-03 21:35:23,352 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/gtp01h6i-media/images/Action Heatmap_9_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:23,949 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /tmp/tmp7ttctnr0wandb/uj39ukae-media/images/Action Heatmap_9_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:24,887 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:26,362 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: stop_status
+2023-10-03 21:35:26,363 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: stop_status
+2023-10-03 21:35:30,668 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:35,669 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:36,976 DEBUG   SenderThread:112161 [sender.py:send():379] send: stats
+2023-10-03 21:35:39,991 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_created():271] file/dir created: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/output.log
+2023-10-03 21:35:40,136 DEBUG   SenderThread:112161 [sender.py:send():379] send: exit
+2023-10-03 21:35:40,136 INFO    SenderThread:112161 [sender.py:send_exit():584] handling exit code: 0
+2023-10-03 21:35:40,136 INFO    SenderThread:112161 [sender.py:send_exit():586] handling runtime: 243
+2023-10-03 21:35:40,137 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:35:40,138 INFO    SenderThread:112161 [sender.py:send_exit():592] send defer
+2023-10-03 21:35:40,138 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:40,138 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 0
+2023-10-03 21:35:40,138 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:40,138 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-10-03 21:35:40,138 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 1
+2023-10-03 21:35:40,139 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:40,139 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 1
+2023-10-03 21:35:40,139 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:40,139 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-10-03 21:35:40,139 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 2
+2023-10-03 21:35:40,139 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:40,139 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 2
+2023-10-03 21:35:40,139 INFO    HandlerThread:112161 [system_monitor.py:finish():190] Stopping system monitor
+2023-10-03 21:35:40,139 DEBUG   SystemMonitor:112161 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-10-03 21:35:40,140 INFO    HandlerThread:112161 [interfaces.py:finish():202] Joined cpu monitor
+2023-10-03 21:35:40,140 DEBUG   SystemMonitor:112161 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-10-03 21:35:40,140 INFO    HandlerThread:112161 [interfaces.py:finish():202] Joined disk monitor
+2023-10-03 21:35:40,186 INFO    HandlerThread:112161 [interfaces.py:finish():202] Joined gpu monitor
+2023-10-03 21:35:40,186 INFO    HandlerThread:112161 [interfaces.py:finish():202] Joined memory monitor
+2023-10-03 21:35:40,186 INFO    HandlerThread:112161 [interfaces.py:finish():202] Joined network monitor
+2023-10-03 21:35:40,187 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:40,187 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-10-03 21:35:40,187 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 3
+2023-10-03 21:35:40,187 DEBUG   SenderThread:112161 [sender.py:send():379] send: stats
+2023-10-03 21:35:40,188 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:40,188 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 3
+2023-10-03 21:35:40,188 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:40,188 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-10-03 21:35:40,188 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 4
+2023-10-03 21:35:40,188 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:40,188 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 4
+2023-10-03 21:35:40,189 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:40,189 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-10-03 21:35:40,189 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 5
+2023-10-03 21:35:40,189 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:40,189 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 5
+2023-10-03 21:35:40,189 DEBUG   SenderThread:112161 [sender.py:send():379] send: summary
+2023-10-03 21:35:40,190 INFO    SenderThread:112161 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-10-03 21:35:40,190 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:40,190 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-10-03 21:35:40,190 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 6
+2023-10-03 21:35:40,190 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:40,190 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 6
+2023-10-03 21:35:40,191 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:40,191 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-10-03 21:35:40,191 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 7
+2023-10-03 21:35:40,191 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: status_report
+2023-10-03 21:35:40,191 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:40,191 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 7
+2023-10-03 21:35:40,191 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:40,191 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-10-03 21:35:40,992 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:35:41,138 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:35:41,836 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 8
+2023-10-03 21:35:41,836 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:35:41,837 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:41,837 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 8
+2023-10-03 21:35:41,837 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:41,837 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-10-03 21:35:41,838 INFO    SenderThread:112161 [job_builder.py:build():281] Attempting to build job artifact
+2023-10-03 21:35:41,841 INFO    SenderThread:112161 [job_builder.py:_get_source_type():411] no source found
+2023-10-03 21:35:41,841 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 9
+2023-10-03 21:35:41,841 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:41,841 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 9
+2023-10-03 21:35:41,842 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:41,842 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-10-03 21:35:41,842 INFO    SenderThread:112161 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-10-03 21:35:41,992 INFO    Thread-17 :112161 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/output.log
+2023-10-03 21:35:41,993 INFO    SenderThread:112161 [dir_watcher.py:finish():388] scan: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files
+2023-10-03 21:35:41,994 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json wandb-summary.json
+2023-10-03 21:35:41,994 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/config.yaml config.yaml
+2023-10-03 21:35:41,994 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/output.log output.log
+2023-10-03 21:35:41,994 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/conda-environment.yaml conda-environment.yaml
+2023-10-03 21:35:41,994 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-metadata.json wandb-metadata.json
+2023-10-03 21:35:41,995 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/requirements.txt requirements.txt
+2023-10-03 21:35:42,003 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_7_e351ebd8237daf506b11.png media/images/Action Heatmap_7_e351ebd8237daf506b11.png
+2023-10-03 21:35:42,006 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_3_e4ad0e44249bd1f87f95.png media/images/Action Heatmap_3_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:42,006 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_8_e4ad0e44249bd1f87f95.png media/images/Action Heatmap_8_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:42,006 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_5_e4ad0e44249bd1f87f95.png media/images/Action Heatmap_5_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:42,006 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_4_e4ad0e44249bd1f87f95.png media/images/Action Heatmap_4_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:42,006 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_1_e351ebd8237daf506b11.png media/images/Action Heatmap_1_e351ebd8237daf506b11.png
+2023-10-03 21:35:42,006 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_9_e4ad0e44249bd1f87f95.png media/images/Action Heatmap_9_e4ad0e44249bd1f87f95.png
+2023-10-03 21:35:42,006 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_6_e351ebd8237daf506b11.png media/images/Action Heatmap_6_e351ebd8237daf506b11.png
+2023-10-03 21:35:42,007 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_2_3f2af23c2765708a42ad.png media/images/Action Heatmap_2_3f2af23c2765708a42ad.png
+2023-10-03 21:35:42,007 INFO    SenderThread:112161 [dir_watcher.py:finish():402] scan save: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/media/images/Action Heatmap_0_37769f25194a92c84519.png media/images/Action Heatmap_0_37769f25194a92c84519.png
+2023-10-03 21:35:42,007 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 10
+2023-10-03 21:35:42,007 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:42,007 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 10
+2023-10-03 21:35:42,008 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:42,008 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-10-03 21:35:42,008 INFO    SenderThread:112161 [file_pusher.py:finish():159] shutting down file pusher
+2023-10-03 21:35:42,138 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:35:42,138 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:35:42,467 INFO    wandb-upload_0:112161 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/wandb-summary.json
+2023-10-03 21:35:42,532 INFO    wandb-upload_1:112161 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/config.yaml
+2023-10-03 21:35:42,602 INFO    wandb-upload_4:112161 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/requirements.txt
+2023-10-03 21:35:42,607 INFO    wandb-upload_2:112161 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/output.log
+2023-10-03 21:35:42,620 INFO    wandb-upload_3:112161 [upload_job.py:push():131] Uploaded file /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/files/conda-environment.yaml
+2023-10-03 21:35:42,820 INFO    Thread-16 (_thread_body):112161 [sender.py:transition_state():612] send defer: 11
+2023-10-03 21:35:42,821 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:42,821 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 11
+2023-10-03 21:35:42,822 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:42,822 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-10-03 21:35:42,822 INFO    SenderThread:112161 [file_pusher.py:join():164] waiting for file pusher
+2023-10-03 21:35:42,822 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 12
+2023-10-03 21:35:42,822 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:42,822 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 12
+2023-10-03 21:35:42,822 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:42,823 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-10-03 21:35:42,823 INFO    SenderThread:112161 [file_stream.py:finish():593] file stream finish called
+2023-10-03 21:35:43,139 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:35:43,696 INFO    SenderThread:112161 [file_stream.py:finish():597] file stream finish is done
+2023-10-03 21:35:43,696 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 13
+2023-10-03 21:35:43,696 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:35:43,696 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:43,697 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 13
+2023-10-03 21:35:43,697 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:43,697 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-10-03 21:35:43,697 INFO    SenderThread:112161 [sender.py:transition_state():612] send defer: 14
+2023-10-03 21:35:43,697 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: defer
+2023-10-03 21:35:43,698 INFO    HandlerThread:112161 [handler.py:handle_request_defer():170] handle defer: 14
+2023-10-03 21:35:43,698 DEBUG   SenderThread:112161 [sender.py:send():379] send: final
+2023-10-03 21:35:43,698 DEBUG   SenderThread:112161 [sender.py:send():379] send: footer
+2023-10-03 21:35:43,698 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: defer
+2023-10-03 21:35:43,698 INFO    SenderThread:112161 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-10-03 21:35:43,699 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:35:43,699 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:35:43,699 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: poll_exit
+2023-10-03 21:35:43,700 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: poll_exit
+2023-10-03 21:35:43,700 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: server_info
+2023-10-03 21:35:43,701 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: get_summary
+2023-10-03 21:35:43,701 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: sampled_history
+2023-10-03 21:35:43,701 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: server_info
+2023-10-03 21:35:43,704 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: job_info
+2023-10-03 21:35:43,892 DEBUG   SenderThread:112161 [sender.py:send_request():406] send_request: job_info
+2023-10-03 21:35:43,892 INFO    MainThread:112161 [wandb_run.py:_footer_history_summary_info():3481] rendering history
+2023-10-03 21:35:43,893 INFO    MainThread:112161 [wandb_run.py:_footer_history_summary_info():3513] rendering summary
+2023-10-03 21:35:43,893 INFO    MainThread:112161 [wandb_run.py:_footer_sync_info():3440] logging synced files
+2023-10-03 21:35:43,894 DEBUG   HandlerThread:112161 [handler.py:handle_request():144] handle_request: shutdown
+2023-10-03 21:35:43,894 INFO    HandlerThread:112161 [handler.py:finish():857] shutting down handler
+2023-10-03 21:35:44,705 INFO    WriterThread:112161 [datastore.py:close():294] close: /home/daehwa/Documents/MINST_GAN/wandb/run-20231003_213136-joj4gb5r/run-joj4gb5r.wandb
+2023-10-03 21:35:44,892 INFO    SenderThread:112161 [sender.py:finish():1552] shutting down sender
+2023-10-03 21:35:44,892 INFO    SenderThread:112161 [file_pusher.py:finish():159] shutting down file pusher
+2023-10-03 21:35:44,893 INFO    SenderThread:112161 [file_pusher.py:join():164] waiting for file pusher
