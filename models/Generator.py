@@ -55,7 +55,6 @@ class PPO_Generator(nn.Module):
         model=ActorCritic().to(
             torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         ),
-        lr=0.001,
         gamma=0.9,
         epsilon=0.2,
         clip_epsilon=0.1,

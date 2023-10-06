@@ -28,13 +28,13 @@ def add_brightness_to_batch_images(images, actions):
     actions = torch.sigmoid(actions)
 
     # action에서 x, y 좌표와 brightness 값을 가져옴
-    x = (actions[:, 0] * (28 - 2)).int()
-    y = (actions[:, 1] * (28 - 2)).int()
+    x = (actions[:, 0] * (28 - 1)).int()
+    y = (actions[:, 1] * (28 - 1)).int()
     brightness = ((actions[:, 2] * 255).int()).float() / 255
 
     new_images = images.clone()
     for i in range(batch_size):
-        new_images[i, 0, y[i] : y[i] + 1, x[i] : x[i] + 1] = brightness[i]
+        new_images[i, 0, y[i], x[i]] = brightness[i]
 
     actions = torch.stack([x, y, brightness], dim=-1)
     return actions, new_images
