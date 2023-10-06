@@ -172,7 +172,7 @@ def train():
 
 def main():
     # Initialize a new sweep
-    sweep_id = wandb.sweep(sweep=sweep_config, project="GAN_RL")
+    sweep_id = wandb.sweep(sweep=sweep_config, project="GAN_RL_SEQ")
 
     # Run sweep agent
     wandb.agent(sweep_id, train, count=50)  # Adjust count as needed
