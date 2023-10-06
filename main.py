@@ -1,20 +1,19 @@
-import wandb
-from RL_utils import sample_action_and_logprob, add_brightness_to_batch_images
-from model import Generator, Discriminator
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 
-from scipy.stats import wasserstein_distance
-import matplotlib.pyplot as plt
-import numpy as np
+import wandb
+from RL_utils import sample_action_and_prob
+from models import PPO_Generator, Discriminator
+from Environment import Environemnt
+
+from config import config
 
 # Hyperparameters
-batch_size = 6000
 epochs = 50
+step_size = 5
 
 # WandB – Login to your wandb account so you can log all your metrics
 wandb.login()
@@ -33,12 +32,12 @@ transform = transforms.Compose(
 )
 train_loader = DataLoader(
     datasets.MNIST("./data", train=True, download=True, transform=transform),
-    batch_size=batch_size,
+    batch_size=config["batch_size"],
     shuffle=True,
 )
 test_loader = DataLoader(
     datasets.MNIST("./data", train=False, download=True, transform=transform),
-    batch_size=batch_size,
+    batch_size=config["batch_size"],
     shuffle=True,
 )
 
@@ -75,16 +74,10 @@ def train():
     counter = 0
 
     # Instantiate Models
-    generator = Generator().to(device)
+    generator = PPO_Generator()
     discriminator = Discriminator().to(device)
 
-    # Optimizers
-    g_optimizer = optim.Adam(generator.parameters(), lr=wandb.config.g_learning_rate)
-    d_optimizer = optim.Adam(
-        discriminator.parameters(), lr=wandb.config.d_learning_rate
-    )
-
-    wandb.watch((generator, discriminator), log="all")
+    wandb.watch((generator.model, discriminator), log="all")
 
     # Training Loop
     for epoch in range(epochs):
@@ -94,66 +87,32 @@ def train():
         total_labels = 0
 
         action_map = torch.zeros((28, 28), device=device)
-        brightness_values = np.zeros(256)
+        env = Environemnt()
 
-        for i, (images, labels) in enumerate(train_loader):
-            images, labels = images.to(device), labels.to(device)
-            action_mean, action_std = generator(images)
+        for i, (states, labels) in enumerate(train_loader):
+            generator.reset()
+            for _ in range(step_size):
+                states, labels = states.to(device), labels.to(device)
+                action_mean, action_std, values = generator(states)
+                actions, old_probs = sample_action_and_prob(action_mean, action_std)
 
-            actions, log_probs = sample_action_and_logprob(action_mean, action_std)
-            actions, adv_images = add_brightness_to_batch_images(images, actions)
+                next_states, rewards, adv_outputs = env.step(
+                    states, actions, discriminator
+                )
 
-            # Zero Gradients
-            d_optimizer.zero_grad()
+                d_loss = discriminator.train(adv_outputs, labels)
 
-            # Forward Pass through Discriminator
-            with torch.no_grad():
-                real_outputs = discriminator(images)
-            adv_outputs = discriminator(adv_images)
+                total_d_loss += d_loss
 
-            # Calculate Loss
-            d_loss = criterion(adv_outputs, labels)
+                generator.append(states, actions, old_probs, rewards, values)
 
-            # Backward Pass
-            d_loss.backward()
-            d_optimizer.step()
+                states = next_states
 
-            # Zero Gradients
-            g_optimizer.zero_grad()
-
-            reward = (
-                torch.tensor(
-                    [
-                        wasserstein_distance(
-                            real_outputs[i].cpu().detach().numpy(),
-                            adv_outputs[i].cpu().detach().numpy(),
-                        )
-                        for i in range(batch_size)
-                    ]
-                ).to(device)
-                * 100
-            )
-
-            g_loss = -torch.mean(reward * log_probs)
-
-            # Update Generator based on Reward
-            g_loss.backward()
-            g_optimizer.step()
-
-            total_d_loss += d_loss.item()
-            total_g_loss += reward.mean().item()
-
+            total_g_loss += generator.train()
+            # Log Adversarial Accuracy
             _, predicted = torch.max(adv_outputs, 1)
             correct_labels += (predicted == labels).sum().item()
             total_labels += labels.size(0)
-
-            x_coords = actions[:, 0].long()
-            y_coords = actions[:, 1].long()
-            brightness = actions[:, 2].long() * 255
-            hist, _ = np.histogram(brightness.cpu().detach().numpy(), bins=256)
-            brightness_values += hist
-            for x, y in zip(x_coords, y_coords):
-                action_map[y, x] += 1
 
         train_accuracy = 100 * correct_labels / total_labels
 
@@ -166,11 +125,23 @@ def train():
                 _, predicted = torch.max(outputs, 1)
                 correct += (predicted == labels).sum().item()
                 total += labels.size(0)
-        test_accuracy = 100 * correct / total
 
+        x_coords = actions[:, 0].long()
+        y_coords = actions[:, 1].long()
+
+        for x, y in zip(x_coords, y_coords):
+            action_map[y, x] += 1
+        test_accuracy = 100 * correct / total
+        print(
+            "Epoch: {}, D Loss: {}, G Loss: {}, Train Accuracy: {}, Test Accuracy: {}".format(
+                epoch,
+                total_d_loss / len(train_loader),
+                total_g_loss / len(train_loader),
+                train_accuracy,
+                test_accuracy,
+            )
+        )
         action_map_np = action_map.cpu().detach().numpy()
-        fig, ax = plt.subplots(figsize=(10, 5))
-        ax.bar(np.arange(256), brightness_values)
 
         wandb.log(
             {
@@ -180,9 +151,6 @@ def train():
                 "Test Accuracy": test_accuracy,
                 "Action Heatmap": [
                     wandb.Image(action_map_np, caption="Action Heatmap")
-                ],
-                "Brightness Histogram": [
-                    wandb.Image(fig, caption="Brightness Histogram")
                 ],
             }
         )
@@ -198,8 +166,14 @@ def train():
             break
 
 
-# Initialize a new sweep
-sweep_id = wandb.sweep(sweep=sweep_config, project="GAN_RL")
+def main():
+    # Initialize a new sweep
+    sweep_id = wandb.sweep(sweep=sweep_config, project="GAN_RL")
 
-# Run sweep agent
-wandb.agent(sweep_id, train, count=50)  # Adjust count as needed
+    # Run sweep agent
+    wandb.agent(sweep_id, train, count=50)  # Adjust count as needed
+    train()
+
+
+if __name__ == "__main__":
+    main()

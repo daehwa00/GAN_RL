@@ -1,7 +1,7 @@
 import torch
 
 
-def sample_action_and_logprob(action_mean, action_std):
+def sample_action_and_prob(action_mean, action_std):
     # action_std 값을 제한
     action_std = torch.clamp(action_std, min=0.1, max=2.0)
 
@@ -14,7 +14,10 @@ def sample_action_and_logprob(action_mean, action_std):
     # log probability 계산
     log_prob = normal_distribution.log_prob(action).sum(dim=-1)
 
-    return action, log_prob
+    # log probability를 probability로 변환
+    prob = torch.exp(log_prob)
+
+    return action, prob
 
 
 def add_brightness_to_batch_images(images, actions):
