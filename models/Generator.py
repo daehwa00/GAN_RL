@@ -56,8 +56,7 @@ class PPO_Generator(nn.Module):
             torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         ),
         gamma=0.9,
-        epsilon=0.2,
-        clip_epsilon=0.1,
+        clip_epsilon=0.2,
         c1=0.5,
         c2=0.1,
     ):
@@ -68,7 +67,6 @@ class PPO_Generator(nn.Module):
             self.model.parameters(), lr=wandb.config.g_learning_rate
         )
         self.gamma = gamma
-        self.epsilon = epsilon
         self.clip_epsilon = clip_epsilon
         self.c1 = c1
         self.c2 = c2
