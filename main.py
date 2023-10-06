@@ -85,6 +85,7 @@ def train():
         total_g_loss = 0
         correct_labels = 0
         total_labels = 0
+        value_loss_s = 0
 
         action_map = torch.zeros((28, 28), device=device)
         env = Environemnt()
@@ -108,7 +109,9 @@ def train():
 
                 states = next_states
 
-            total_g_loss += generator.train()
+            g_loss, value_loss = generator.train()
+            total_g_loss += g_loss
+            value_loss_s += value_loss
             # Log Adversarial Accuracy
             _, predicted = torch.max(adv_outputs, 1)
             correct_labels += (predicted == labels).sum().item()
@@ -149,6 +152,7 @@ def train():
                 "Generator Loss": total_g_loss / len(train_loader),
                 "Training Accuracy": train_accuracy,
                 "Test Accuracy": test_accuracy,
+                "Value Loss": value_loss_s / len(train_loader),
                 "Action Heatmap": [
                     wandb.Image(action_map_np, caption="Action Heatmap")
                 ],

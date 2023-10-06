@@ -147,4 +147,4 @@ class PPO_Generator(nn.Module):
         loss.backward()
         self.optimizer.step()
 
-        return returns.mean().item()
+        return returns.mean().item(), value_loss.item()
